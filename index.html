@@ -57,13 +57,13 @@ footer { text-align: center; padding: 25px; }
 Mulai Menjelajah 🚀
 </button>
 </div>
-
 <section id="jelajah">
 <h2>🌌 Jelajahi Alam Semesta</h2>
 <div class="card">
 <h3>🪐 Tata Surya</h3>
 <p>Kenali Matahari dan delapan planetnya.</p>
-</div>
+<button onclick="bukaTataSurya()">Jelajahi planet</button>
+</div
 <div class="card">
 <h3>🌟 Bintang</h3>
 <p>Pelajari benda langit yang menghasilkan cahaya sendiri.</p>
@@ -77,9 +77,17 @@ Mulai Menjelajah 🚀
 <p>Pelajari perjalanan manusia menjelajahi luar angkasa.</p>
 </div>
 </section>
-
+<section id="tata-surya" style="display:none;">
+  <h2>Jelajahi Tata Surya 🪐</h2>
+  <p>Pilih planet untuk mengenalnya lebih dekat.</p>
+</section>
 <footer>
 <p>Made with curiosity ✨ | My Universe</p>
 </footer>
+  <script>
+function bukaTataSurya() {
+  document.getElementById("tata-surya").style.display = "block";
+}
+  </script>
 </body>
 </html>
